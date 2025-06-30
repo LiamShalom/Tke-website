@@ -1,0 +1,92 @@
+.rush-box {
+    width: 1300px;
+    height: 500px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;     /* Vertical centering */
+    justify-content: center; /* Horizontal centering (optional) */
+    flex-direction: column;
+}
+
+.rush-box-text {
+    height: auto;
+    width: 1000px;
+    padding: 0px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rush-box-text-small {
+    height: auto;
+    width: 1000px;
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.rush-button-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.rush-black-button {
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    gap: 1rem;
+}
+
+.rush-black-button:hover {
+    background-color: #333;
+}
+
+.rush-white-button {
+    background-color: white;
+    color: black;
+    padding: 0.8rem 1.6rem;
+    border: 1.5px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    gap: 1rem;
+}
+
+.rush-white-button:hover {
+    border-color: rgb(160, 160, 160);
+}
+
+/* @media (max-width: 1024px) {
+    .responsive-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-box {
+        width: 95%;
+    }
+} */
+  

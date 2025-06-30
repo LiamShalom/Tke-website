@@ -5,6 +5,7 @@
     gap: 2rem;               /* space between boxes */
     padding: 20px;
     flex-wrap: wrap;         /* optional: allows wrapping on small screens */
+    flex-direction: column;
 }
 
 .rush-profile-container {
