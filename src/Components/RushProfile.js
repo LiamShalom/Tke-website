@@ -1,7 +1,8 @@
 import "./RushProfile.css"
 import React from 'react';
 
-function RushProfile( {img, name, phone, email, insta} ) {
+function RushProfile( {input} ) {
+    const {img, name, phone, email, insta} = input
     return (
         <div className="image-box">
             <img src={img} className="image" />
