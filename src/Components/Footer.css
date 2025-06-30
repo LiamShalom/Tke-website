@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(65, 65 , 65);
+    font-weight: bold;
+    font-family: sans-serif;
+    min-height: 64px;
+}
