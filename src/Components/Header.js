@@ -19,7 +19,7 @@ function Header() {
                 <nav className="nav">
                     <a className="page" onClick={() => {
                         toggleNav();
-                        navigate('/home')}
+                        navigate('/')}
                     }>Home</a>
                     <a className="page" onClick={() => {
                         toggleNav();
