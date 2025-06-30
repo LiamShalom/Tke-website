@@ -1,10 +1,19 @@
-//import React from "React";
+import React from "react";
 import { RushProfile } from "../Components/RushProfile.js"
 
+const trevorData = {
+    img: "../../public/logo512.png",
+    name: "Trevor Berry",
+    phone: "(425) 599-9335",
+    email: "",
+    insta: ""
+};
+
 function Rush() {
+
     return (
         <div className="box-container">
-            <div className="box">Trevor</div>
+            <RushProfile input = {trevorData} className="box">Trevor</RushProfile>
             <div className="box">Andy</div>
             <div className="box">Carter</div>
             <div className="box">Vishal</div>
