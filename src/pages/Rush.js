@@ -2,7 +2,7 @@
 // See FOR MAINTAINING tags.
 
 import React from "react";
-import { RushProfile } from "../Components/RushProfile.js"
+import RushProfile from "../Components/RushProfile.js"
 
 // FOR MAINTAINING: Change the following entries to match the updated rush chairs.
 const headRushData = {
