@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header() {
 
-    const [navVisible, setNavVisible] = useState(true);
+    const [navVisible, setNavVisible] = useState(false);
     const navigate = useNavigate();
 
     const toggleNav = () => {
@@ -14,16 +14,31 @@ function Header() {
 
     return (
         <header className="header">
+            <input type="image" className="logo" src= "./tke-logo.png" alt="Tke Logo" onClick={toggleNav} />
             {navVisible && (
                 <nav className="nav">
-                    <a onClick={() => navigate('/home')}>Home</a>
-                    <a onClick={() => navigate('/about')}>About</a>
-                    <a onClick={() => navigate('/rush')}>Rush</a>
-                    <a onClick={() => navigate('/exec')}>Exec</a>
-                    <a onClick={() => navigate('/gallery')}>Gallery</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/home')}
+                    }>Home</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/about')}
+                    }>About</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/rush')}
+                    }>Rush</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/exec')}
+                    }>Exec</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/gallery')}
+                    }>Gallery</a>
                 </nav>
             )}
-            <button className="nav-button" onClick={toggleNav}>0</button>
         </header>
     )
 }
