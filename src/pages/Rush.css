@@ -1,0 +1,8 @@
+.rush-container {
+    display: flex;
+    justify-content: center; /* horizontally center the group */
+    align-items: center;     /* vertically center if container has height */
+    gap: 2rem;               /* space between boxes */
+    padding: 2rem;
+    flex-wrap: wrap;         /* optional: allows wrapping on small screens */
+  }
