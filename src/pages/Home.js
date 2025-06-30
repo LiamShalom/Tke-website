@@ -1,8 +1,5 @@
 function Home() {
-
-    return (
-        <h1>Home</h1>
-    )
-}
-
+    return <h2>Rush TKE</h2>;
+  }
+  
 export default Home;
