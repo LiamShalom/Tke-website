@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    padding-block: 8px;
+    background-color: darkred;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
