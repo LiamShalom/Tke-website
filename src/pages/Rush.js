@@ -3,6 +3,7 @@
 
 import React from "react";
 import RushProfile from "../Components/RushProfile.js"
+import RushBox from "../Components/RushBox.js"
 import "./Rush.css"
 
 // TO MAINTAIN: Change the following entries to match the updated rush chairs.
@@ -19,7 +20,7 @@ const headRushData = {
 };
 
 const chair1Data = {
-    img: "./logo512.png",
+    img: "./rush-gallery/andyhoff.jpg",
     name: "Andy Hoff",
     details: "Rush Chair", // Don't change
     pc: "24",
@@ -56,16 +57,20 @@ const chair3Data = {
 // Render main component.
 function Rush() {
     return (
-        <div>
-            <h2 className="rush-sub-header">Interested in TKE? Contact our Rush Chairs.</h2>
-            <div className="rush-container">
-            <RushProfile input = {headRushData} className="box"></RushProfile>
-            <RushProfile input = {chair1Data} className="box"></RushProfile>
-            <RushProfile input = {chair2Data} className="box"></RushProfile>
-            <RushProfile input = {chair3Data} className="box"></RushProfile>
+        <div className="rush-container">
+            <RushBox></RushBox>
+            <h1>About Rush</h1>
+            <h1>Meet Our Team</h1>
+            <div className="rush-profile-container">
+                <RushProfile input = {headRushData} className="box"></RushProfile>
+                <RushProfile input = {chair1Data} className="box"></RushProfile>
+                <RushProfile input = {chair2Data} className="box"></RushProfile>
+                <RushProfile input = {chair3Data} className="box"></RushProfile>
+                {/* <div className="rush-chairs-image-box">
+                    <img src={"./rush-gallery/tke-rush-chairs.jpg"} className="rush-chairs-image"></img>
+                </div> */}
+            </div>
         </div>
-        </div>
-        
     );
 }
 
