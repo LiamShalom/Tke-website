@@ -10,6 +10,7 @@ const headRushData = {
     img: "./logo512.png",
     name: "Trevor Berry",
     details: "Head Rush", // Don't change
+    pc: "23",
     loc: "Kirkland, WA",
     major: "Finance",
     phone: "(425) 599-9335",
@@ -20,6 +21,7 @@ const chair1Data = {
     img: "./logo512.png",
     name: "Andy Hoff",
     details: "Rush Chair", // Don't change
+    pc: "24",
     loc: "Seattle, WA",
     major: "Mechanical Engineering",
     phone: "(206) 771-3332",
@@ -30,6 +32,7 @@ const chair2Data = {
     img: "./logo512.png",
     name: "Carter Thompson",
     details: "Rush Chair", // Don't change
+    pc: "24",
     loc: "Sammamish, WA",
     major: "Construction Management",
     phone: "(425) 553-9999",
@@ -40,6 +43,7 @@ const chair3Data = {
     img: "./logo512.png",
     name: "Vishal Grimella",
     details: "Rush Chair", // Don't change
+    pc: "24",
     loc: "The Bay 🤙",
     major: "Political Science",
     phone: "(510) 561-8086",
