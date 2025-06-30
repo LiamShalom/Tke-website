@@ -10,3 +10,5 @@ function RushProfile( {input} ) {
         </div>
     );
 }
+
+export default RushProfile;
