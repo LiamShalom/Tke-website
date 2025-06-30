@@ -1,12 +1,24 @@
 import "./RushProfile.css"
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa';
 
 function RushProfile( {input} ) {
-    const {img, name, phone, email, insta} = input
+    const {img, name, details, loc, major, phone, insta} = input
     return (
-        <div className="image-box">
-            <img src={img} className="image" />
-            <div className="description">{name}</div>
+        <div className="rush-image-box">
+            <img src={img} className="rush-image" />
+            <div className="rush-name">{name}</div>
+            <div className="rush-details">{details}, {loc}</div>
+            <div className="rush-major">{major}</div>
+            <a href={`tel:${phone}`} className="rush-phone">{phone}</a>
+            <a
+                href={`https://instagram.com/${insta}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rush-insta-link"
+            >
+                <FaInstagram size={24} />
+            </a>
         </div>
     );
 }

@@ -3,38 +3,47 @@
 
 import React from "react";
 import RushProfile from "../Components/RushProfile.js"
+import "./Rush.css"
 
 // FOR MAINTAINING: Change the following entries to match the updated rush chairs.
 const headRushData = {
-    img: "../../public/logo512.png",
+    img: "./logo512.png",
     name: "Trevor Berry",
+    details: "Head Rush", // Don't change
+    loc: "Kirkland, WA",
+    major: "Finance",
     phone: "(425) 599-9335",
-    email: "",
-    insta: ""
+    insta: "trevor.berry7"
 };
 
 const chair1Data = {
-    img: "../../public/logo512.png",
+    img: "./logo512.png",
     name: "Andy Hoff",
+    details: "Rush Chair", // Don't change
+    loc: "Seattle, WA",
+    major: "Mechanical Engineering",
     phone: "(206) 771-3332",
-    email: "",
-    insta: ""
+    insta: "andyhofff"
 };
 
 const chair2Data = {
-    img: "../../public/logo512.png",
+    img: "./logo512.png",
     name: "Carter Thompson",
+    details: "Rush Chair", // Don't change
+    loc: "Sammamish, WA",
+    major: "Construction Management",
     phone: "(425) 553-9999",
-    email: "",
-    insta: ""
+    insta: "carthomps75"
 };
 
 const chair3Data = {
-    img: "../../public/logo512.png",
+    img: "./logo512.png",
     name: "Vishal Grimella",
+    details: "Rush Chair", // Don't change
+    loc: "The Bay 🤙",
+    major: "Political Science",
     phone: "(510) 561-8086",
-    email: "",
-    insta: ""
+    insta: "vishal_garimella"
 };
 
 
@@ -42,7 +51,7 @@ const chair3Data = {
 // Render main component.
 function Rush() {
     return (
-        <div className="box-container">
+        <div className="rush-container">
             <RushProfile input = {headRushData} className="box"></RushProfile>
             <RushProfile input = {chair1Data} className="box"></RushProfile>
             <RushProfile input = {chair2Data} className="box"></RushProfile>
