@@ -7,12 +7,13 @@
 }
 
 .home-header {
-   width: 100%;
-   margin-bottom: 32px;
+    width: 100%;
+    margin-bottom: 32px;
 }
+
 .home-values {
     display: flex;
-    color: darkred;
+    color: black;
     gap: 48px;
     margin-bottom: 32px;
 }
@@ -30,6 +31,7 @@
 
 .home-value-title {
     font-size: larger;
+    font-weight: bold;
 }
 
 .home-value-description {
@@ -47,11 +49,15 @@
     width: 100%;
     min-width: 512px;
     text-align: left;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 16px;
+    margin-bottom: 32px;
 }
 
-.home-about-header {
-    font-size: larger;
-    font-weight: bold;
+.home-about-description {
+    color: #777
 }
 
 .home-carousel {
@@ -59,12 +65,17 @@
     margin-bottom: 32px;
 }
 
+.home-carousel:hover {
+    transform: scale(1.025);
+}
+
 .learn-more {
     background-color: transparent;
-    color:darkred;
+    color: darkred;
     border: none;
     font-size: larger;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
+    margin-top: 16px;
 }

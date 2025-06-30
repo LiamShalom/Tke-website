@@ -12,13 +12,25 @@ function Home() {
     const navigate = useNavigate();
 
     return (
+
         <div className="home-main">
             <div className="home-header">
                 <img src="TKENewLOGO.png" alt="TKElogo" />
             </div>
+            <div className="home-about">
+                <h1 className="home-about-header">WHY JOIN TAU KAPPA EPSILON FRATERNITY?</h1>
+                <a className="home-about-description">The Chi chapter at the University of Washington is the longest standing TKE chapter in the entire nation.
+                    Since 1899 we have partied and made memories to last a lifetime. Joining TKE meeans becoming a part of something
+                    bigger than yourself - you'll find yourself surrounded by likeminded men who will always have your back.
+                </a>
+                <button type="submit" className="learn-more" onClick={() => navigate('/about')}>Learn More</button>
+            </div>
+            <div className="home-carousel">
+                <ImageCarousel images={images} />
+            </div>
             <div className="home-values">
                 <div className="home-value-item">
-                    <img src="./finish.png" alt="Leadership" width="36px" height="36px"/>
+                    <img src="./finish.png" alt="Leadership" width="36px" height="36px" />
                     <div className="home-value-item-content">
                         <div className="home-value-title">Leadership</div>
                         <div className="home-value-description">
@@ -27,7 +39,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-value-item">
-                    <img src="./multiple-users-silhouette.png" alt="Social" width="36px" height="36px"/>
+                    <img src="./multiple-users-silhouette.png" alt="Social" width="36px" height="36px" />
                     <div className="home-value-item-content">
                         <div className="home-value-title">Social</div>
                         <div className="home-value-description">College is about balance, that also includes having a great time.
@@ -35,7 +47,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-value-item">
-                    <img src="./open-book.png" alt="Academics" width="36px" height="36px"/>
+                    <img src="./open-book.png" alt="Academics" width="36px" height="36px" />
                     <div className="home-value-item-content">
                         <div className="home-value-title">Academics</div>
                         <div className="home-value-description">
@@ -43,24 +55,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                
-
-
-            </div>
-            
-
-            <div className="home-carousel">
-                <ImageCarousel images={images} />
             </div>
 
-            <div className="home-about">
-                <p className="home-about-header">WHY JOIN TAU KAPPA EPSILON FRATERNITY?</p>
-                <p>The CHI chapter at the University of Washington is the longest standing TKE chapter in the entire nation.
-                    Since 1899 we have partied and made memories to last a lifetime. Joining TKE meeans becoming a part of something
-                    bigger than yourself - you'll find yourself surrounded by likeminded men who will always have your back.
-                </p>
-                <button type="submit" className="learn-more" onClick={() => navigate('/about')}>Learn More</button>
-            </div>
+
 
 
 
