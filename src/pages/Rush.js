@@ -1,4 +1,4 @@
-import React from "React";
+//import React from "React";
 import { RushProfile } from "../Components/RushProfile.js"
 
 function Rush() {

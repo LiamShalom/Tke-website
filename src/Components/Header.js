@@ -16,10 +16,11 @@ function Header() {
         <header className="header">
             {navVisible && (
                 <nav className="nav">
+                    <a onClick={() => navigate('/home')}>Home</a>
                     <a onClick={() => navigate('/about')}>About</a>
-                    <a href="/">Rush</a>
-                    <a href="/">Exec</a>
-                    <a href="/">Gallery</a>
+                    <a onClick={() => navigate('/rush')}>Rush</a>
+                    <a onClick={() => navigate('/exec')}>Exec</a>
+                    <a onClick={() => navigate('/gallery')}>Gallery</a>
                 </nav>
             )}
             <button className="nav-button" onClick={toggleNav}>0</button>

@@ -4,17 +4,20 @@ import Header from './Components/Header';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Exec from './pages/Exec';
+import Rush from './pages/Rush';
+import Gallery from './pages/Gallery';
 
 function App() {
-
-
-  
   return (
     <div className="App">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/exec" element={<Exec />}></Route>
+        <Route path="/rush" element={<Rush />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
       </Routes>
       Fuck you Solden
     </div>
