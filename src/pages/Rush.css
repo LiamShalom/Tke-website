@@ -3,6 +3,6 @@
     justify-content: center; /* horizontally center the group */
     align-items: center;     /* vertically center if container has height */
     gap: 2rem;               /* space between boxes */
-    padding: 2rem;
+    padding: 0px;
     flex-wrap: wrap;         /* optional: allows wrapping on small screens */
   }

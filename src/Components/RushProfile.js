@@ -2,6 +2,12 @@ import "./RushProfile.css"
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 
+
+/**
+ * Takes in input data and produces a formatted profile of each rush chair.
+ * @param {input} input of the form {img, name, details, loc, pc, major, phone, insta}
+ * @returns corresponding component
+ */
 function RushProfile( {input} ) {
     const {img, name, details, loc, pc, major, phone, insta} = input
     return (

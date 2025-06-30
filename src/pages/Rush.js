@@ -1,11 +1,12 @@
 // Main component for rush page. Shows four rush chairs and their information.
-// See FOR MAINTAINING tags.
+// See TO MAINTAINING tags.
 
 import React from "react";
 import RushProfile from "../Components/RushProfile.js"
 import "./Rush.css"
 
-// FOR MAINTAINING: Change the following entries to match the updated rush chairs.
+// TO MAINTAIN: Change the following entries to match the updated rush chairs.
+// Images should be added to ./public/gallery
 const headRushData = {
     img: "./logo512.png",
     name: "Trevor Berry",
@@ -55,12 +56,16 @@ const chair3Data = {
 // Render main component.
 function Rush() {
     return (
-        <div className="rush-container">
+        <div>
+            <h2 className="rush-sub-header">Interested in TKE? Contact our Rush Chairs.</h2>
+            <div className="rush-container">
             <RushProfile input = {headRushData} className="box"></RushProfile>
             <RushProfile input = {chair1Data} className="box"></RushProfile>
             <RushProfile input = {chair2Data} className="box"></RushProfile>
             <RushProfile input = {chair3Data} className="box"></RushProfile>
         </div>
+        </div>
+        
     );
 }
 
