@@ -6,8 +6,12 @@ import "./Home.css";
 function Home() {
 
     const images = [
-        './logo192.png',
-        './tke-logo.png'
+        './tke-photo1.jpg',
+        './tke-photo2.jpg',
+        './tke-photo3.jpg',
+        './tke-photo4.jpg',
+        './tke-photo6.jpg',
+        './tke-photo7.jpg'
     ];
 
     const navigate = useNavigate();

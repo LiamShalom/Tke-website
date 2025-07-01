@@ -25,7 +25,7 @@ function Header() {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaInstagram size={48} />
+                    <FaInstagram size={36} />
                 </a>
                 <a
                     href={nat}
@@ -33,7 +33,7 @@ function Header() {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaGlobe size={48} />
+                    <FaGlobe size={36} />
                 </a>
             </div>
 
