@@ -12,7 +12,7 @@ function RushBox( { scrollFunc, aboutRef, teamRef } ) {
 
     return (
         <div className="rush-box">
-            <div className="rush-box-text">Interested in TKE? Contact our Rush Chairs</div>
+            <div className="rush-box-text">Interested in UW TKE? Contact our Rush Chairs</div>
             <div className="rush-box-text-small">Or learn more about rush below.</div>
             <div className="rush-button-wrapper">
                 <button className="rush-black-button" onClick={onTeamButtonClick}>Meet Our Team</button>

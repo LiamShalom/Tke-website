@@ -68,7 +68,7 @@ function Rush() {
     return (
         <div className="rush-container">
             <RushBox scrollFunc={scrollToSection} aboutRef={aboutRef} teamRef={teamRef}></RushBox>
-            <h1 ref={aboutRef} className="why-tke-section">Why Rush TKE?</h1>
+            <h1 ref={aboutRef} className="why-tke-section">Why Rush TKE at UW?</h1>
             <WhySection></WhySection>
             <h1 ref={teamRef} className="meet-our-team-section">Meet Our Team</h1>
             <div className="rush-profile-container">
