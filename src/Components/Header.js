@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaInstagram, FaGlobe } from 'react-icons/fa';
+import { TbX } from "react-icons/tb";
 import './Header.css';
 
 function Header() {
@@ -17,7 +18,11 @@ function Header() {
 
     return (
         <header className="header">
-            <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" onClick={toggleNav} />
+            <div onClick={toggleNav}>
+                <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo"  />
+                <input type="image"  className="logo" src="./uw-logo.png" alt="Uw Logo"/>
+            </div>
+
             <div className="header-icons">
                 <a
                     href={insta}
