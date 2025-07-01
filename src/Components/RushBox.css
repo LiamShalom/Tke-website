@@ -78,15 +78,14 @@
     border-color: rgb(160, 160, 160);
 }
 
-/* @media (max-width: 1024px) {
-    .responsive-box {
-        width: 80%;
-    }
-}
-
 @media (max-width: 768px) {
-    .responsive-box {
-        width: 95%;
+    .rush-box {
+        height: 600px;
     }
-} */
+
+    .rush-box-text {
+        width: 80%;
+        font-size: 56px;
+    }
+} 
   

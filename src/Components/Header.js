@@ -18,8 +18,9 @@ function Header() {
 
     return (
         <header className="header">
-            <div onClick={toggleNav}>
+            <div onClick={toggleNav} className="header-logo">
                 <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo"  />
+                @
                 <input type="image"  className="logo" src="./uw-logo.png" alt="Uw Logo"/>
             </div>
 
@@ -62,9 +63,14 @@ function Header() {
                     }>Rush</a>
                     <a className="page" onClick={() => {
                         toggleNav();
-                        navigate('/exec')
+                        navigate('/members')
                     }
-                    }>Exec</a>
+                    }>Members</a>
+                    <a className="page" onClick={() => {
+                        toggleNav();
+                        navigate('/house-tour')
+                    }
+                    }>Members</a>
                     <a className="page" onClick={() => {
                         toggleNav();
                         navigate('/gallery')

@@ -2,10 +2,10 @@
 // See TO MAINTAINING tags.
 
 import React, { useRef } from "react";
-import RushProfile from "../Components/RushProfile.js"
-import RushBox from "../Components/RushBox.js"
+import RushProfile from "../Components/RushProfile.js";
+import RushBox from "../Components/RushBox.js";
 import WhySection from "../Components/WhySection.js";
-import "./Rush.css"
+import "./Rush.css";
 
 // TO MAINTAIN: Change the following entries to match the updated rush chairs.
 // Images should be added to ./public/gallery
@@ -43,8 +43,8 @@ const chair2Data = {
 };
 
 const chair3Data = {
-    img: "./logo512.png",
-    name: "Vishal Grimella",
+    img: "./rush-gallery/vishalgarimella.jpg",
+    name: "Vishal Garimella",
     details: "Rush Chair", // Don't change
     pc: "24",
     loc: "The Bay 🤙",

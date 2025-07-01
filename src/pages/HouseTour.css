@@ -1,0 +1,13 @@
+.house-tour-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .house-tour-container {
+        flex-direction: column;
+    }
+}
