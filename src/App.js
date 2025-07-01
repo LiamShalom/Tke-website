@@ -7,7 +7,6 @@ import About from './pages/About';
 import Exec from './pages/Exec';
 import Rush from './pages/Rush';
 import Gallery from './pages/Gallery';
-import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
       </Routes>
       </div>
-      <Footer></Footer>
       
     </div>
   );

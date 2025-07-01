@@ -2,9 +2,8 @@
     position: fixed;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
     align-items: center;
+    justify-content: space-between;
     color: white;
     background-color: rgb(65, 65 , 65);
     font-weight: bold;
@@ -17,20 +16,39 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
     position: fixed;
     top: 72px;
     z-index: 1000;
+    font-size: large;
 }
 
 .page {
+    margin-inline: 16px;
     padding: 8px;
 }
 
 .logo {
     padding: 8px;
     width: 64px;
-    justify-items: center;
-    align-items: center;
+}
+
+.header-icons {
+    gap: 8px;
+}
+
+.header-link {
+    color: #616161;            /* Instagram pink */
+    text-decoration: none; 
+    padding-right: 16px;   /* Remove underline */
+}
+
+.header-link:visited {
+    color: #616161;            /* Same color after click */
+}
+
+.header-link:hover {
+    transform: scale(1.1);     /* Optional hover effect */ 
+    color: #616161;            /* Slightly darker on hover, optional */
 }
