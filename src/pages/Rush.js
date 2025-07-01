@@ -10,9 +10,9 @@ import "./Rush.css";
 // TO MAINTAIN: Change the following entries to match the updated rush chairs.
 // Images should be added to ./public/gallery
 const headRushData = {
-    img: "./logo512.png",
+    img: "./rush-gallery/trevorberry.jpg",
     name: "Trevor Berry",
-    details: "Head Rush", // Don't change
+    details: "Head Rush", 
     pc: "23",
     loc: "Kirkland, WA",
     major: "Finance",
@@ -23,7 +23,7 @@ const headRushData = {
 const chair1Data = {
     img: "./rush-gallery/andyhoff.jpg",
     name: "Andy Hoff",
-    details: "Rush Chair", // Don't change
+    details: "Rush Chair", 
     pc: "24",
     loc: "Seattle, WA",
     major: "Mechanical Engineering",
@@ -34,7 +34,7 @@ const chair1Data = {
 const chair2Data = {
     img: "./logo512.png",
     name: "Carter Thompson",
-    details: "Rush Chair", // Don't change
+    details: "Rush Chair", 
     pc: "24",
     loc: "Sammamish, WA",
     major: "Construction Management",
@@ -45,7 +45,7 @@ const chair2Data = {
 const chair3Data = {
     img: "./rush-gallery/vishalgarimella.jpg",
     name: "Vishal Garimella",
-    details: "Rush Chair", // Don't change
+    details: "Rush Chair", 
     pc: "24",
     loc: "The Bay 🤙",
     major: "Political Science",
