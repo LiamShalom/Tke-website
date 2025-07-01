@@ -1,9 +1,10 @@
 // Main component for rush page. Shows four rush chairs and their information.
 // See TO MAINTAINING tags.
 
-import React from "react";
+import React, { useRef } from "react";
 import RushProfile from "../Components/RushProfile.js"
 import RushBox from "../Components/RushBox.js"
+import WhySection from "../Components/WhySection.js";
 import "./Rush.css"
 
 // TO MAINTAIN: Change the following entries to match the updated rush chairs.
@@ -56,11 +57,20 @@ const chair3Data = {
 
 // Render main component.
 function Rush() {
+
+    const aboutRef = useRef(null);
+    const teamRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="rush-container">
-            <RushBox></RushBox>
-            <h1>About Rush</h1>
-            <h1>Meet Our Team</h1>
+            <RushBox scrollFunc={scrollToSection} aboutRef={aboutRef} teamRef={teamRef}></RushBox>
+            <h1 ref={aboutRef} className="why-tke-section">Why Rush TKE?</h1>
+            <WhySection></WhySection>
+            <h1 ref={teamRef} className="meet-our-team-section">Meet Our Team</h1>
             <div className="rush-profile-container">
                 <RushProfile input = {headRushData} className="box"></RushProfile>
                 <RushProfile input = {chair1Data} className="box"></RushProfile>
