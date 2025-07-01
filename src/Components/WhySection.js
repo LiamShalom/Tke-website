@@ -12,6 +12,7 @@ function WhySection() {
                 </ul>
                 <p>In today's world, coming of age and college can be a confusing time for young men. Everyone is connected via social media, but we want more. We want to be able to learn about ourselves, each other, and life with diverse sets of people who can guide us along the way. Tau Kappa Epsilon is that opportunity whether you are joining an existing chapter or starting a new one. Leadership, networking, creating culture, and pursuing excellence are all key ideals in Tau Kappa Epsilon that have allowed us to lead the Fraternity world since our inception.</p>
                 <p>We need you to help us to continue that path forward, growing stronger together than we ever could imagine alone.</p>
+                <p>See <a href="http://www.tke.org/">here</a> to learn more about TKE as a whole.</p>
             </div>
         </div>
     );
