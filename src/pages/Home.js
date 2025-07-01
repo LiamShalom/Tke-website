@@ -1,5 +1,6 @@
 import ImageCarousel from "../Components/ImageCarousel";
 import { useNavigate } from "react-router-dom";
+import { FaBook } from 'react-icons/fa';
 import "./Home.css";
 
 function Home() {
