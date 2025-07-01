@@ -15,7 +15,13 @@
     display: flex;
     color: black;
     gap: 48px;
+    width: 100%;
     margin-bottom: 32px;
+    padding: 16px;
+    justify-content: center;
+    background-color: #d3d3d3;
+    border-top: 8px solid;
+    border-color: darkred;
 }
 
 .home-value-item {
