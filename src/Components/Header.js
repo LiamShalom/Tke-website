@@ -70,7 +70,7 @@ function Header() {
                         toggleNav();
                         navigate('/house-tour')
                     }
-                    }>Members</a>
+                    }>Virtual House Tours</a>
                     <a className="page" onClick={() => {
                         toggleNav();
                         navigate('/gallery')
