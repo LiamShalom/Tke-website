@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ImageCarousel.css';
 
-function ImageCarousel({images}) {
+function ImageCarousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
@@ -11,6 +11,12 @@ function ImageCarousel({images}) {
     const goToNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     };
+
+    useEffect(() => {
+        const interval = setInterval(goToNext, 5000);
+        return () => clearInterval(interval);
+    }, []);
+
 
     return (
         <div className="carousel-container">
