@@ -4,7 +4,7 @@ import { FaInstagram, FaGlobe } from 'react-icons/fa';
 import { TbX } from "react-icons/tb";
 import './Header.css';
 
-function Header( { refFunc } ) {
+function Header({ refFunc }) {
 
     const [navVisible, setNavVisible] = useState(false);
     const navigate = useNavigate();
@@ -19,9 +19,9 @@ function Header( { refFunc } ) {
     return (
         <header className="header">
             <div onClick={toggleNav} className="header-logo">
-                <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo"  />
+                <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
                 @
-                <input type="image"  className="logo" src="./uw-logo.png" alt="Uw Logo"/>
+                <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
             </div>
 
             <div className="header-icons">
@@ -44,46 +44,44 @@ function Header( { refFunc } ) {
             </div>
 
 
-            {navVisible && (
-                <nav className="nav">
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/')
-                        refFunc()
-                    }
-                    }>Home</a>
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/about')
-                        refFunc()
-                    }
-                    }>About</a>
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/rush')
-                        refFunc()
-                    }
-                    }>Rush</a>
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/members')
-                        refFunc()
-                    }
-                    }>Members</a>
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/house-tour')
-                        refFunc()
-                    }
-                    }>Virtual House Tours</a>
-                    <a className="page" onClick={() => {
-                        toggleNav();
-                        navigate('/gallery')
-                        refFunc()
-                    }
-                    }>Gallery</a>
-                </nav>
-            )}
+            <nav className={`nav ${navVisible ? 'visible' : 'hidden'}`}>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/')
+                    refFunc()
+                }
+                }>Home</a>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/about')
+                    refFunc()
+                }
+                }>About</a>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/rush')
+                    refFunc()
+                }
+                }>Rush</a>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/members')
+                    refFunc()
+                }
+                }>Members</a>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/house-tour')
+                    refFunc()
+                }
+                }>Virtual House Tours</a>
+                <a className="page" onClick={() => {
+                    toggleNav();
+                    navigate('/gallery')
+                    refFunc()
+                }
+                }>Gallery</a>
+            </nav>
         </header>
     )
 }
