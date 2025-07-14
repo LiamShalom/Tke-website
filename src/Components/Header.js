@@ -71,10 +71,10 @@ function Header({ refFunc }) {
                 }>Members</a>
                 <a className="page" onClick={() => {
                     toggleNav();
-                    navigate('/house-tour')
+                    navigate('/see-our-house')
                     refFunc()
                 }
-                }>Virtual House Tours</a>
+                }>See Our House</a>
                 <a className="page" onClick={() => {
                     toggleNav();
                     navigate('/gallery')
