@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaInstagram, FaGlobe } from 'react-icons/fa';
+import { GiHamburgerMenu } from "react-icons/gi";
 import { TbX } from "react-icons/tb";
 import './Header.css';
+import NavBar from './NavBar';
 
 function Header({ refFunc }) {
 
@@ -15,13 +17,27 @@ function Header({ refFunc }) {
         setNavVisible(!navVisible);
     }
 
+    const navHome = () => {
+        if (navVisible) {
+            toggleNav();
+        }
+        navigate('/');
+    }
 
     return (
         <header className="header">
-            <div onClick={toggleNav} className="header-logo">
-                <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
-                @
-                <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
+            <div className='header-nav-wrapper'>
+                <div onClick={navHome} className="header-logo">
+                    <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
+                    @
+                    <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
+                </div>
+
+                <NavBar className="header-top-navbar" 
+                        toggleNav={toggleNav}
+                        navFunc={navigate}
+                        refFunc={refFunc}>
+                </NavBar>
             </div>
 
             <div className="header-icons">
@@ -42,7 +58,6 @@ function Header({ refFunc }) {
                     <FaGlobe size={36} />
                 </a>
             </div>
-
 
             <nav className={`nav ${navVisible ? 'visible' : 'hidden'}`}>
                 <a className="page" onClick={() => {
