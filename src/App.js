@@ -18,8 +18,6 @@ function App() {
     topOfPageRef.current?.scrollIntoView();
   }
 
-  console.log(process.env.REACT_APP_GOOGLE_MAPS_KEY)
-
   return (
     <LoadScript 
             googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_KEY}
