@@ -1,0 +1,27 @@
+.nav-mobile-stack {
+    color: white;
+}
+
+.nav-mobile-stack-wrapper {
+    border: 1px solid #616161;
+    border-radius: 5px;
+    padding-top: 0.2rem;
+    padding-bottom: 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.nav-mobile-stack-wrapper:hover {
+    background-color: #616161;
+}
+
+.nav-desktop-wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.page:hover {
+    color: #999999;
+}
