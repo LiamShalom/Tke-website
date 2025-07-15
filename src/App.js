@@ -18,9 +18,11 @@ function App() {
     topOfPageRef.current?.scrollIntoView();
   }
 
+  console.log(process.env.REACT_APP_GOOGLE_MAPS_KEY)
+
   return (
     <LoadScript 
-            googleMapsApiKey="AIzaSyAF5vtXuhatGWwmxA7QCLbZJ-ZzsMo3uZg"
+            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_KEY}
     >
       <div className="App">
         <Header refFunc={scrollToTop}></Header>
