@@ -1,8 +1,23 @@
 .house-tour-container {
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center; 
+    flex-wrap: wrap;       
+    padding: 1rem;
+}
+
+.house-tour-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem;
+}
+
+.tour-streetview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;       
     padding: 1rem;
 }
 

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useRef } from "react";
+import { LoadScript } from "@react-google-maps/api";
 import Header from './Components/Header';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -18,20 +19,24 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header refFunc={scrollToTop}></Header>
-      <div className='main-content' ref={topOfPageRef}>
-        <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/members" element={<Members />}></Route>
-        <Route path="/rush" element={<Rush />}></Route>
-        <Route path="/gallery" element={<Gallery />}></Route>
-        <Route path="/see-our-house" element={<HouseTour />}></Route>
-      </Routes>
+    <LoadScript 
+            googleMapsApiKey="AIzaSyAF5vtXuhatGWwmxA7QCLbZJ-ZzsMo3uZg"
+    >
+      <div className="App">
+        <Header refFunc={scrollToTop}></Header>
+        <div className='main-content' ref={topOfPageRef}>
+          <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/members" element={<Members />}></Route>
+          <Route path="/rush" element={<Rush />}></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/see-our-house" element={<HouseTour />}></Route>
+        </Routes>
+        </div>
+        
       </div>
-      
-    </div>
+    </LoadScript>
   );
 }
 

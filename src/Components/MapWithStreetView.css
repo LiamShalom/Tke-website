@@ -1,0 +1,33 @@
+.streetview-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 60vh;
+}
+
+.streetview-pano {
+    width: 75%;
+    height: 100%;
+}
+
+.streetview-map {
+    width: 25%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .streetview-pano {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .streetview-map {
+        width: 100%;
+        height: 40%;
+    }
+
+    .streetview-wrapper {
+        flex-direction: column;
+        height: 90vh;
+    }
+}

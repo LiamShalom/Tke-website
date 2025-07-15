@@ -1,21 +1,8 @@
-import { useState, useEffect } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { TbLayoutNavbar } from 'react-icons/tb';
+import useMediaQuery from "../Hooks/useMediaQuery";
 import "./NavBar.css"
 
-function useMediaQuery(query) {
-    const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
-
-    useEffect(() => {
-        const media = window.matchMedia(query);
-        const listener = () => setMatches(media.matches);
-        media.addEventListener('change', listener);
-        return () => media.removeEventListener('change', listener);
-    }, [query]);
-
-    return matches;
-}
-
+// Main navbar function
 function NavBar( { toggleNav, navFunc, refFunc } ) {
     const isMobile = useMediaQuery('(max-width: 1024px)');
 
@@ -23,6 +10,7 @@ function NavBar( { toggleNav, navFunc, refFunc } ) {
                     : DesktopNav( { toggleNav, navFunc, refFunc } );
 }
 
+// Mobile version of the navbar
 function MobileNav( { toggleNav, navFunc, refFunc } ) {
     return (
         <div className='nav-mobile-stack-wrapper'>
@@ -31,6 +19,7 @@ function MobileNav( { toggleNav, navFunc, refFunc } ) {
     );
 }
 
+// Desktop version
 function DesktopNav( { toggleNav, navFunc, refFunc } ) {
     return (
         <div className='nav-desktop-wrapper'>
