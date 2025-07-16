@@ -1,0 +1,51 @@
+.rushbanner-container {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;     /* Vertical centering */
+    justify-content: center; /* Horizontal centering (optional) */
+    flex-direction: row;
+    overflow: hidden;
+    background-color: rgb(180, 35, 35);
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.rushbanner-text-container {
+    width: max-content;
+    display: flex;
+    align-items: center;     /* Vertical centering */
+    justify-content: center; /* Horizontal centering (optional) */
+    flex-direction: row;
+    overflow: show;
+    flex-wrap: nowrap;
+    animation: bannerStream 5s linear infinite;
+}
+
+.rushbanner-text-box {
+    height: 100vh;
+    width: 259px;
+    display: flex;
+    align-items: center;     /* Vertical centering */
+    justify-content: center;
+    font-family: 'Home Video Bold';
+    font-size: 36px;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family:"Home Video Bold";
+    src: url("../fonts/HomeVideo-Bold.eot?") format("eot"),
+         url("../fonts/HomeVideo-Bold.woff") format("woff"),
+         url("../fonts/HomeVideo-Bold.ttf") format("truetype"),
+         url("../fonts/HomeVideo-Bold.svg#HomeVideo-Bold") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@keyframes bannerStream {
+    100% {
+        transform: translateX(259px)
+    }
+}

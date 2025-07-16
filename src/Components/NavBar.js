@@ -23,32 +23,32 @@ function MobileNav( { toggleNav, navFunc, refFunc } ) {
 function DesktopNav( { toggleNav, navFunc, refFunc } ) {
     return (
         <div className='nav-desktop-wrapper'>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/')
                 refFunc()
             }
             }>Home</a>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/about')
                 refFunc()
             }
             }>About</a>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/rush')
                 refFunc()
             }
             }>Rush</a>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/members')
                 refFunc()
             }
             }>Members</a>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/see-our-house')
                 refFunc()
             }
             }>See Our House</a>
-            <a className="page" onClick={() => {
+            <a className="nav-bar-text" onClick={() => {
                 navFunc('/gallery')
                 refFunc()
             }

@@ -20,6 +20,4 @@ function HouseTour() {
     );
 }
 
-// TODO: Create a backend to hide the API key for streetview
-
 export default HouseTour

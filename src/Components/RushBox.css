@@ -1,12 +1,13 @@
 .rush-box {
-    /* width: 1300px;*/
+    --border-size: 0.15rem;
     width: 90%;
     height: 500px;
-    border: 1px solid rgb(200, 200, 200);
+    border: var(--border-size) solid rgb(0, 0, 0);
     border-radius: 30px;
     overflow: hidden;
     background-color: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.278);
+    /* box-shadow: 2px 2px 10px rgb(255, 185, 185); */
     display: flex;
     align-items: center;     /* Vertical centering */
     justify-content: center; /* Horizontal centering (optional) */
@@ -88,4 +89,89 @@
         font-size: 56px;
     }
 } 
+
+/* animation for box shadows */
+@keyframes colorCycleShadow {
+    0% {
+      box-shadow: 0 0 10px rgb(255, 131, 131);
+    }
+    50% {
+      box-shadow: 0 0 10px rgb(99, 99, 99);
+    }
+    100% {
+      box-shadow: 0 0 10px rgb(255, 131, 131);
+    }
+}
+  
+.dynamic-shadow {
+    animation: colorCycleShadow 7s infinite ease-in-out;
+}
+
+@keyframes shadowLoop {
+    0% {
+      box-shadow: 10px 0px 6px rgb(255, 131, 131);
+    }
+    25% {
+      box-shadow: 0px 10px 6px rgb(255, 131, 131);
+    }
+    50% {
+      box-shadow: -10px 0px 6px rgb(255, 131, 131);
+    }
+    75% {
+      box-shadow: 0px -10px 6px rgb(255, 131, 131);
+    }
+    100% {
+      box-shadow: 10px 0px 6px rgb(255, 131, 131);
+    }
+}
+  
+.looping-shadow {
+    animation: shadowLoop 10s linear infinite;
+}
+
+/* border animation */
+.rainbow:hover {
+    --border-size: 0.15rem;
+    border: var(--border-size) dotted transparent;
+    background-image: linear-gradient(
+        to right,
+        rgb(255 255 255 / var(--opacity)),
+        rgb(255 255 255 / var(--opacity))
+      ),
+      conic-gradient(
+        from var(--angle),
+        rgb(255, 200, 200) 0deg 90deg,
+        #ffffff 90deg 180deg,
+        #ffffff 180deg 270deg,
+        #ffffff 270deg 360deg
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+@property --opacity {
+    syntax: "<number>";
+    initial-value: 1;
+    inherits: false;
+}
+  
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+  
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+  
+.rainbow {
+    animation: rotate 7s linear infinite;
+}
+
+.rainbow:hover {
+    opacity: 1;
+}
   

@@ -5,6 +5,7 @@ import React, { useRef } from "react";
 import RushProfile from "../Components/RushProfile.js";
 import RushBox from "../Components/RushBox.js";
 import WhySection from "../Components/WhyRush.js";
+import RushBanner from "../Components/RushBanner.js";
 import "./Rush.css";
 
 // TO MAINTAIN: Change the following entries to match the updated rush chairs.
@@ -67,6 +68,7 @@ function Rush() {
 
     return (
         <div className="rush-container">
+            <RushBanner></RushBanner>
             <RushBox scrollFunc={scrollToSection} aboutRef={aboutRef} teamRef={teamRef}></RushBox>
             <h1 ref={aboutRef} className="why-tke-section">Why Rush TKE at UW?</h1>
             <WhySection></WhySection>

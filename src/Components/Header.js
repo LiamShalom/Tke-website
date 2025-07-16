@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaInstagram, FaGlobe } from 'react-icons/fa';
+import { CgWebsite } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TbX } from "react-icons/tb";
 import './Header.css';
@@ -47,7 +48,7 @@ function Header({ refFunc }) {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaInstagram size={36} />
+                    <FaInstagram size={36} color={'white'} />
                 </a>
                 <a
                     href={nat}
@@ -55,7 +56,7 @@ function Header({ refFunc }) {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaGlobe size={36} />
+                    <CgWebsite size={36} color={'white'} />
                 </a>
             </div>
 

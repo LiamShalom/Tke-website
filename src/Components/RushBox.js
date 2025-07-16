@@ -1,5 +1,6 @@
 import "./RushBox.css"
 import React from 'react';
+import TkeFlag from "./tkeFlag";
 
 function RushBox( { scrollFunc, aboutRef, teamRef } ) {
     const onTeamButtonClick = () => {

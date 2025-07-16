@@ -10,6 +10,7 @@ import Members from './pages/Members';
 import Rush from './pages/Rush';
 import Gallery from './pages/Gallery';
 import HouseTour from './pages/HouseTour';
+import RushBanner from './Components/RushBanner';
 
 function App() {
   const topOfPageRef = useRef(null);
@@ -34,7 +35,9 @@ function App() {
           <Route path="/see-our-house" element={<HouseTour />}></Route>
         </Routes>
         </div>
-        
+        <div className="footer">
+          <RushBanner></RushBanner>
+        </div>
       </div>
     </LoadScript>
   );
