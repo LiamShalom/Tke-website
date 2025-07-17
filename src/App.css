@@ -50,3 +50,23 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family:"Home Video";
+  src: url("./fonts/HomeVideo-Regular.eot?") format("eot"),
+       url("./fonts/HomeVideo-Regular.woff") format("woff"),
+       url("./fonts/HomeVideo-Regular.ttf") format("truetype"),
+       url("./fonts/HomeVideo-Regular.svg#HomeVideo-Bold") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"Home Video Bold";
+  src: url("./fonts/HomeVideo-Bold.eot?") format("eot"),
+       url("./fonts/HomeVideo-Bold.woff") format("woff"),
+       url("./fonts/HomeVideo-Bold.ttf") format("truetype"),
+       url("./fonts/HomeVideo-Bold.svg#HomeVideo-Bold") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}

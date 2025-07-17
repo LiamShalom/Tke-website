@@ -34,16 +34,6 @@
     background-color: rgb(255, 255, 255);
 }
 
-@font-face {
-    font-family:"Home Video Bold";
-    src: url("../fonts/HomeVideo-Bold.eot?") format("eot"),
-         url("../fonts/HomeVideo-Bold.woff") format("woff"),
-         url("../fonts/HomeVideo-Bold.ttf") format("truetype"),
-         url("../fonts/HomeVideo-Bold.svg#HomeVideo-Bold") format("svg");
-    font-weight:normal;
-    font-style:normal;
-}
-
 @keyframes bannerStream {
     100% {
         transform: translateX(259px)

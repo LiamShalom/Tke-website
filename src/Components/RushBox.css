@@ -1,5 +1,5 @@
 .rush-box {
-    --border-size: 0.15rem;
+    --border-size: 0.1rem;
     width: 90%;
     height: 500px;
     border: var(--border-size) solid rgb(0, 0, 0);

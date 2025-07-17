@@ -27,8 +27,10 @@
     margin-inline: 12px;
     padding: 8px;
     font-size: 18px;
+    font-family: 'Home Video';
 }
 
 .nav-bar-text:hover {
-    color: #999999;
+    /* color: #999999; */
+    color: rgba(167, 153, 73, 0.53);
 }

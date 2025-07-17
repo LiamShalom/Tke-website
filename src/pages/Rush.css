@@ -8,6 +8,7 @@
     flex-wrap: wrap;         /* optional: allows wrapping on small screens */
     flex-direction: column;
     margin-bottom: 64px;
+    background-color: white;
 }
 
 .rush-profile-container {
