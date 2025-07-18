@@ -1,5 +1,7 @@
 import ImageCarousel from "../Components/ImageCarousel";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef } from 'react';
+import TkeFlag from '../Components/tkeFlag';
 import { FaBook } from 'react-icons/fa';
 import "./Home.css";
 
@@ -15,9 +17,24 @@ function Home() {
     ];
 
     const navigate = useNavigate();
+    const textOverlayRef = useRef(null);
+
+    // Duplicate text content to "overlaid-text" field for multicoloring on mount
+    useEffect(() => {
+        if (textOverlayRef.current) {
+            textOverlayRef.current.setAttribute("overlaid-text", textOverlayRef.current.textContent);
+        }
+    }, []);
 
     return (
-
+        <>
+        <div className='home-flag-container'>
+            <div className='home-flag-box'>
+                <TkeFlag>
+                    <h1 ref={textOverlayRef} className='home-flag-foreground'>TAU KAPPA EPSILON</h1>
+                </TkeFlag>
+            </div>
+        </div>
         <div className="home-main">
             <div className="home-header">
                 <img src="TKENewLOGO.png" alt="TKElogo" />
@@ -67,6 +84,7 @@ function Home() {
 
 
         </div>
+        </>
     )
 }
 

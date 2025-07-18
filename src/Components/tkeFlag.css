@@ -6,6 +6,9 @@
     justify-content: center; /* Horizontal centering (optional) */
     flex-direction: column;
     overflow: hidden;
+    position: relative;
+    background-color: rgb(169, 47, 47);
+    opacity: 1;
 }
 
 .flag-diagonal-stripe {
@@ -15,10 +18,11 @@
     font-size: 64px;
     width: 150%;
     height: 250px;
-    opacity: 0.75;
-    background: gray;
+    background: rgb(150, 150, 150);
     padding-top: 1.5rem;
     transform: rotate(20deg);
+    position: absolute;
+    z-index: 0;
 }
 
 .flag-triangle {
@@ -28,7 +32,7 @@
 	height: 0;
 	border-left: calc(var(--a) / 2) solid transparent;
 	border-right: calc(var(--a) / 2) solid transparent;
-	border-top: calc(0.866 * var(--a)) solid rgb(255, 0, 0);
+	border-top: calc(0.866 * var(--a)) solid rgb(169, 47, 47);
     transform: rotate(-20deg);
 }
 
@@ -44,7 +48,7 @@
     height: 0;
     border-left: calc(var(--b) / 2) solid transparent;
 	border-right: calc(var(--b) / 2) solid transparent;
-	border-top: calc(0.866 * var(--b)) solid gray;
+	border-top: calc(0.866 * var(--b)) solid rgb(150, 150, 150);
     pointer-events: none;
 }
 
@@ -55,16 +59,21 @@
     align-items: center;
     gap: 30px;
     animation: moveStream 4s linear infinite;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 .flag-box:hover .flag-triangle-stream {
     animation-play-state: running;
 }
 
-
 @keyframes moveStream {
     100% {
         transform: translateX(230px)
     }
+}
+
+.flag-foreground {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
 }

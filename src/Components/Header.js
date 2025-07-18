@@ -30,7 +30,7 @@ function Header({ refFunc }) {
             <div className='header-nav-wrapper'>
                 <div onClick={navHome} className="header-logo">
                     <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
-                    X
+                    x
                     <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
                 </div>
 
