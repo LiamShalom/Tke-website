@@ -48,7 +48,7 @@ function Header({ refFunc }) {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaInstagram size={36} color={'white'} />
+                    <FaInstagram size={36} className='header-icons-icon' />
                 </a>
                 <a
                     href={nat}
@@ -56,7 +56,7 @@ function Header({ refFunc }) {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <CgWebsite size={36} color={'white'} />
+                    <CgWebsite size={36} className='header-icons-icon' />
                 </a>
             </div>
 

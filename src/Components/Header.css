@@ -95,3 +95,11 @@
     align-items: center;
     gap: 1rem;
 }
+
+.header-icons-icon {
+    color: white;
+}
+
+.header-icons-icon:hover {
+    color: rgb(169, 47, 47);
+}
