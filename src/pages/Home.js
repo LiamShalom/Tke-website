@@ -45,7 +45,14 @@ function Home() {
                     Since 1899 we have partied and made memories to last a lifetime. Joining TKE means becoming a part of something
                     bigger than yourself - you'll find yourself surrounded by likeminded men who will always have your back.
                 </a>
-                <button type="submit" className="learn-more" onClick={() => navigate('/about')}>Learn More</button>
+                <a
+                    className="learn-more"
+                    href="https://www.tke.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Learn More
+                </a>
             </div>
             <div className="home-carousel">
                 <ImageCarousel images={images} />

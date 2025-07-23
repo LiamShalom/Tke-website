@@ -28,11 +28,6 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
                 refFunc()
             }
             }>Home</a>
-            {/* <a className="nav-bar-text" onClick={() => {
-                navFunc('/about')
-                refFunc()
-            }
-            }>About</a> */}
             <a className="nav-bar-text" onClick={() => {
                 navFunc('/rush')
                 refFunc()
