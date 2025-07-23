@@ -5,7 +5,6 @@ import { LoadScript } from "@react-google-maps/api";
 import Header from './Components/Header';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
 import Members from './pages/Members';
 import Rush from './pages/Rush';
 import Gallery from './pages/Gallery';
@@ -28,7 +27,6 @@ function App() {
         <div className='main-content' ref={topOfPageRef}>
           <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
           <Route path="/members" element={<Members />}></Route>
           <Route path="/rush" element={<Rush />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
