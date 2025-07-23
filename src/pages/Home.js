@@ -37,7 +37,7 @@ function Home() {
         </div>
         <div className="home-main">
             <div className="home-header">
-                <img src="TKENewLOGO.png" alt="TKElogo" />
+                <img className="home-tke-logo" src="TKENewLOGO.png" alt="TKElogo" />
             </div>
             <div className="home-about">
                 <h1 className="home-about-header">WHY JOIN TAU KAPPA EPSILON FRATERNITY?</h1>
