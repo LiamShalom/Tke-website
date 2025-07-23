@@ -28,31 +28,31 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
                 refFunc()
             }
             }>Home</a>
-            <a className="nav-bar-text" onClick={() => {
+            {/* <a className="nav-bar-text" onClick={() => {
                 navFunc('/about')
                 refFunc()
             }
-            }>About</a>
+            }>About</a> */}
             <a className="nav-bar-text" onClick={() => {
                 navFunc('/rush')
                 refFunc()
             }
             }>Rush</a>
-            <a className="nav-bar-text" onClick={() => {
+            {/* <a className="nav-bar-text" onClick={() => {
                 navFunc('/members')
                 refFunc()
             }
-            }>Members</a>
+            }>Members</a> */}
             <a className="nav-bar-text" onClick={() => {
                 navFunc('/see-our-house')
                 refFunc()
             }
             }>See Our House</a>
-            <a className="nav-bar-text" onClick={() => {
+            {/* <a className="nav-bar-text" onClick={() => {
                 navFunc('/gallery')
                 refFunc()
             }
-            }>Gallery</a>
+            }>Gallery</a> */}
         </div>
     );
 }
