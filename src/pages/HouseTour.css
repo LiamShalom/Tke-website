@@ -4,13 +4,7 @@
     align-items: center; 
     flex-wrap: wrap;       
     padding: 1rem;
-}
-
-.house-tour-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 1rem;
+    width: 100%;
 }
 
 .tour-streetview-container {
