@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+html, body {
+  overscroll-behavior: none; /* disable bounce in both directions */
+}
+
 .main-content {
   padding-top: 80px;
 }

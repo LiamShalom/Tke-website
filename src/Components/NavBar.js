@@ -54,14 +54,14 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
                 refFunc()
             }
             }>Gallery</a> */}
-            <div className="header-icons">
+            <div className="nav-header-icons">
                 <a
                     href={insta}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <FaInstagram size={36} className='header-icons-icon' />
+                    <FaInstagram size={36} className='nav-header-icons-icon' />
                 </a>
                 <a
                     href={nat}
@@ -69,7 +69,7 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
                     rel="noopener noreferrer"
                     className="header-link"
                 >
-                    <CgWebsite size={36} className='header-icons-icon' />
+                    <CgWebsite size={36} className='nav-header-icons-icon' />
                 </a>
             </div>
         </div>

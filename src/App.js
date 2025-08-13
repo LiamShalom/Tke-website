@@ -4,11 +4,7 @@ import { useRef } from "react";
 import { LoadScript } from "@react-google-maps/api";
 import Header from './Components/Header';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Members from './pages/Members';
-import Rush from './pages/Rush';
-import Gallery from './pages/Gallery';
-import HouseTour from './pages/HouseTour';
+import routes from './routes';
 import RushBanner from './Components/RushBanner';
 
 function App() {
@@ -26,12 +22,10 @@ function App() {
         <Header refFunc={scrollToTop}></Header>
         <div className='main-content' ref={topOfPageRef}>
           <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/members" element={<Members />}></Route>
-          <Route path="/rush" element={<Rush />}></Route>
-          <Route path="/gallery" element={<Gallery />}></Route>
-          <Route path="/see-our-house" element={<HouseTour />}></Route>
-        </Routes>
+            {routes.map(( { path, element }, idx) => (
+              <Route key={idx} path={path} element={element}/>
+            ))}
+          </Routes>
         </div>
         <div className="footer">
           <RushBanner></RushBanner>

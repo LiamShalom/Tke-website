@@ -9,6 +9,8 @@
     padding-bottom: 0rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: 8px;
 }
 
 .nav-mobile-stack-wrapper:hover {
@@ -16,10 +18,10 @@
 }
 
 .nav-desktop-wrapper {
+    width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
 }
 
 .nav-bar-text {
@@ -33,4 +35,16 @@
 .nav-bar-text:hover {
     /* color: #999999; */
     color: rgb(169, 47, 47)
+}
+
+.nav-header-icons {
+    margin-left: auto;
+}
+
+.nav-header-icons-icon {
+    color: white;
+}
+
+.nav-header-icons-icon:hover {
+    color: rgb(169, 47, 47);
 }

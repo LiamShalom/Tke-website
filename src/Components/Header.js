@@ -41,25 +41,6 @@ function Header({ refFunc }) {
                 </NavBar>
             </div>
 
-            <div className="header-icons">
-                <a
-                    href={insta}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="header-link"
-                >
-                    <FaInstagram size={36} className='header-icons-icon' />
-                </a>
-                <a
-                    href={nat}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="header-link"
-                >
-                    <CgWebsite size={36} className='header-icons-icon' />
-                </a>
-            </div>
-
             <nav className={`nav ${navVisible ? 'visible' : 'hidden'}`}>
                 <a className="page" onClick={() => {
                     toggleNav();
