@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 16px;
+    padding: 1rem;
 }
 
 .home-header {
@@ -11,9 +12,14 @@
     margin-bottom: 32px;
 }
 
+.home-tke-logo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
 .home-values {
     display: flex;
-    color: black;
     gap: 48px;
     width: 100%;
     padding: 16px;
@@ -23,7 +29,17 @@
     border-color: darkred;
 }
 
+@media (max-width: 768px) {
+    .home-values {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
 .home-value-item {
+    width: 100%;
+    max-width: 300px;
+    padding: 16px;
     display: flex;
     gap: 16px;
 }
@@ -52,13 +68,13 @@
     padding-inline: 128px;
     font-family: sans-serif;
     width: 100%;
-    min-width: 512px;
     text-align: left;
     border: 1px solid #ccc;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     padding: 16px;
     margin-bottom: 32px;
+    gap: 32px;
 }
 
 .home-about-description {

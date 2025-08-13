@@ -35,31 +35,25 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
             }
             }>Home</a>
             <a className="nav-bar-text" onClick={() => {
-                navFunc('/about')
-                refFunc()
-            }
-            }>About</a>
-            <a className="nav-bar-text" onClick={() => {
                 navFunc('/rush')
                 refFunc()
             }
             }>Rush</a>
-            <a className="nav-bar-text" onClick={() => {
+            {/* <a className="nav-bar-text" onClick={() => {
                 navFunc('/members')
                 refFunc()
             }
-            }>Members</a>
+            }>Members</a> */}
             <a className="nav-bar-text" onClick={() => {
                 navFunc('/see-our-house')
                 refFunc()
             }
             }>See Our House</a>
-            <a className="nav-bar-text" onClick={() => {
+            {/*<a className="nav-bar-text" onClick={() => {
                 navFunc('/gallery')
                 refFunc()
             }
-            }>Gallery</a>
-
+            }>Gallery</a> */}
             <div className="header-icons">
                 <a
                     href={insta}

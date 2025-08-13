@@ -69,34 +69,28 @@ function Header({ refFunc }) {
                 }>Home</a>
                 <a className="page" onClick={() => {
                     toggleNav();
-                    navigate('/about')
-                    refFunc()
-                }
-                }>About</a>
-                <a className="page" onClick={() => {
-                    toggleNav();
                     navigate('/rush')
                     refFunc()
                 }
                 }>Rush</a>
-                <a className="page" onClick={() => {
+                {/* <a className="page" onClick={() => {
                     toggleNav();
                     navigate('/members')
                     refFunc()
                 }
-                }>Members</a>
+                }>Members</a> */}
                 <a className="page" onClick={() => {
                     toggleNav();
                     navigate('/see-our-house')
                     refFunc()
                 }
                 }>See Our House</a>
-                <a className="page" onClick={() => {
+                {/* <a className="page" onClick={() => {
                     toggleNav();
                     navigate('/gallery')
                     refFunc()
                 }
-                }>Gallery</a>
+                }>Gallery</a> */}
             </nav>
         </header>
     )
