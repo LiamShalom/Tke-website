@@ -1,4 +1,4 @@
-import "./RushBox.css"
+import "./RushBox.css";
 import React from 'react';
 import TkeFlag from "./tkeFlag";
 

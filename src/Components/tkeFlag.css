@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 64px;
     width: 150%;
     height: 250px;
     background: rgb(150, 150, 150);
@@ -76,4 +75,14 @@
     position: relative;
     z-index: 1;
     opacity: 1;
+}
+
+@media (max-width: 760px) {
+    .flag-diagonal-stripe {
+        transform: rotate(30deg);
+    }
+
+    .flag-triangle {
+        transform: rotate(-30deg);
+    }
 }

@@ -1,5 +1,8 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import useMediaQuery from "../Hooks/useMediaQuery";
+import { FaInstagram, FaGlobe } from 'react-icons/fa';
+import { CgWebsite } from "react-icons/cg";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./NavBar.css"
 
 // Main navbar function
@@ -21,6 +24,9 @@ function MobileNav( { toggleNav, navFunc, refFunc } ) {
 
 // Desktop version
 function DesktopNav( { toggleNav, navFunc, refFunc } ) {
+    const insta = "https://www.instagram.com/uwtekes/";
+    const nat = "https://www.tke.org/"
+
     return (
         <div className='nav-desktop-wrapper'>
             <a className="nav-bar-text" onClick={() => {
@@ -53,6 +59,25 @@ function DesktopNav( { toggleNav, navFunc, refFunc } ) {
                 refFunc()
             }
             }>Gallery</a>
+
+            <div className="header-icons">
+                <a
+                    href={insta}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="header-link"
+                >
+                    <FaInstagram size={36} className='header-icons-icon' />
+                </a>
+                <a
+                    href={nat}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="header-link"
+                >
+                    <CgWebsite size={36} className='header-icons-icon' />
+                </a>
+            </div>
         </div>
     );
 }

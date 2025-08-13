@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300');
+
+.gallery-background {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.green-text {
+    font-family: 'Source Code Pro' monospace;
+    color: rgb(56, 201, 56);
+    font-weight: 400;
+}
+
+.blink-effect {
+    animation: blinkEffect 1s infinite;
+}
+
+@keyframes blinkEffect {
+    0% {
+        opacity: 1
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

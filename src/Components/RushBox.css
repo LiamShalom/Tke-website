@@ -1,5 +1,5 @@
 .rush-box {
-    --border-size: 0.1rem;
+    --border-size: 0rem;
     width: 90%;
     height: 500px;
     border: var(--border-size) solid rgb(0, 0, 0);
@@ -19,7 +19,7 @@
     width: 75%;
     padding: 0px;
     text-align: center;
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -79,15 +79,28 @@
     border-color: rgb(160, 160, 160);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .rush-box {
-        height: 600px;
+        height: 400px;
     }
 
     .rush-box-text {
-        width: 80%;
-        font-size: 56px;
+        width: 90%;
+        font-size: 42px;
     }
+
+    .rush-box-text-small {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .rush-black-button {
+        font-size: 1.1rem;
+    }
+
+    .rush-white-button {
+      font-size: 1.1rem;
+  }
 } 
 
 /* animation for box shadows */
