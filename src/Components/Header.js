@@ -25,22 +25,8 @@ function Header({ refFunc }) {
         navigate('/');
     }
 
-    return (
-        <header className="header">
-            <div className='header-nav-wrapper'>
-                <div onClick={navHome} className="header-logo">
-                    <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
-                    x
-                    <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
-                </div>
-
-                <NavBar className="header-top-navbar" 
-                        toggleNav={toggleNav}
-                        navFunc={navigate}
-                        refFunc={refFunc}>
-                </NavBar>
-            </div>
-
+    const ShowNav = () => {
+        return navVisible && (
             <nav className={`nav ${navVisible ? 'visible' : 'hidden'}`}>
                 <a className="page" onClick={() => {
                     toggleNav();
@@ -73,6 +59,25 @@ function Header({ refFunc }) {
                 }
                 }>Gallery</a> */}
             </nav>
+        )
+    }
+
+    return (
+        <header className="header">
+            <div className='header-nav-wrapper'>
+                <div onClick={navHome} className="header-logo">
+                    <input type="image" className="logo" src="./tke-logo.png" alt="Tke Logo" />
+                    x
+                    <input type="image" className="logo" src="./uw-logo.png" alt="Uw Logo" />
+                </div>
+
+                <NavBar className="header-top-navbar" 
+                        toggleNav={toggleNav}
+                        navFunc={navigate}
+                        refFunc={refFunc}>
+                </NavBar>
+            </div>
+            <ShowNav/>
         </header>
     )
 }
