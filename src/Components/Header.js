@@ -11,8 +11,6 @@ function Header({ refFunc }) {
 
     const [navVisible, setNavVisible] = useState(false);
     const navigate = useNavigate();
-    const insta = "https://www.instagram.com/uwtekes/";
-    const nat = "https://www.tke.org/"
 
     const toggleNav = () => {
         setNavVisible(!navVisible);
