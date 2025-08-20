@@ -13,8 +13,8 @@ function HouseTour() {
             </div>
             <h1>Virtual House Tours</h1>
             <div className="house-tour-container">
-                <InstagramEmbed url="https://www.instagram.com/p/DJj7_q_p5ix/" width={400} />
-                <InstagramEmbed url="https://www.instagram.com/p/CRM3WuBlT9o/" width={400} />
+                <InstagramEmbed url="https://www.instagram.com/p/DJj7_q_p5ix/" className="house-insta-embed"/>
+                <InstagramEmbed url="https://www.instagram.com/p/CRM3WuBlT9o/" className="house-insta-embed"/>
             </div>
         </div>
     );

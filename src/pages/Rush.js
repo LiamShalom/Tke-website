@@ -33,7 +33,7 @@ const chair1Data = {
 };
 
 const chair2Data = {
-    img: "./logo512.png",
+    img: "./rush-gallery/carterthompson.jpeg",
     name: "Carter Thompson",
     details: "Rush Chair", 
     pc: "24",

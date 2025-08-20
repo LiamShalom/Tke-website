@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    flex-wrap: wrap;       
-    padding: 1rem;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 .tour-streetview-container {
@@ -15,8 +14,16 @@
     padding: 1rem;
 }
 
+.house-insta-embed {
+    width: 400px;
+}
+
 @media (max-width: 768px) {
     .house-tour-container {
         flex-direction: column;
+    }
+
+    .house-insta-embed {
+        width: 90%;
     }
 }
